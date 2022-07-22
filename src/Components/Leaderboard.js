@@ -49,9 +49,6 @@ const Leaderboard = () => {
 								value={score}
 								duration={500}
 								formatValue={(n) => n.toFixed(0)}
-								style={{
-									color: "rgb(175, 114, 130)",
-								}}
 							/>
 							pt
 						</Points>
