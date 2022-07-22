@@ -38,13 +38,13 @@ const Leaderboard = () => {
 		<FlipMove>
 			{players.map(({ userID, displayName, score, picture }, index) => {
 				return (
-					<PlayerContainer key={userID}>
+					<PlayerContainer dark={index} key={userID}>
 						<PlayerInfo>
 							<Rank position={index}>{index + 1}</Rank>
 							<Image src={picture} alt='player' />
 							<p className='name'>{displayName}</p>
 						</PlayerInfo>
-						<Points>
+						<Points id='points'>
 							<AnimatedNumber
 								value={score}
 								duration={500}
