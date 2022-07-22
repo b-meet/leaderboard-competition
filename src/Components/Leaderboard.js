@@ -44,17 +44,17 @@ const Leaderboard = () => {
 							<Image src={picture} alt='player' />
 							<p className='name'>{displayName}</p>
 						</PlayerInfo>
-						<AnimatedNumber
-							value={score}
-							duration={500}
-							formatValue={(n) => n.toFixed(0)}
-							style={{
-								color: "rgb(175, 114, 130)",
-								padding: "0px !important",
-								margin: "0px !important",
-							}}
-						></AnimatedNumber>
-						<Points>Pt</Points>
+						<Points>
+							<AnimatedNumber
+								value={score}
+								duration={500}
+								formatValue={(n) => n.toFixed(0)}
+								style={{
+									color: "rgb(175, 114, 130)",
+								}}
+							/>
+							pt
+						</Points>
 					</PlayerContainer>
 				);
 			})}
