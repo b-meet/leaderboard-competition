@@ -3,7 +3,7 @@ import styled from "styled-components";
 export const PlayerContainer = styled.section`
 	background: ${({ dark }) =>
 		dark % 2 === 0 ? "rgb(240, 243, 252)" : "rgb(249, 250, 254)"};
-	padding: 0.5rem 1.75rem 0.5rem 1rem;
+	padding: 0.5rem 1rem;
 	max-width: 90%;
 	margin: auto;
 	display: flex;
@@ -12,7 +12,7 @@ export const PlayerContainer = styled.section`
 	justify-content: space-between;
 	align-items: center;
 	color: rgb(58, 53, 55);
-	transition: all 0.15s;
+	transition: background 0.15s;
 
 	&:hover {
 		background: rgb(74, 105, 221);
@@ -54,7 +54,7 @@ export const Image = styled.img`
 	width: 35px;
 	object-fit: cover;
 	border-radius: 50%;
-	margin: 0 1rem;
+	margin: 0 0.5rem;
 	border: 2px solid #fff;
 `;
 
