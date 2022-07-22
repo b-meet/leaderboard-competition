@@ -47,28 +47,3 @@ export const Image = styled.img`
 export const Points = styled.p`
 	color: rgb(175, 114, 130);
 `;
-
-// @property --num {
-//   syntax: "<integer>";
-//   initial-value: 0;
-//   inherits: false;
-// }
-
-// Points p {
-//   animation: counter 5s infinite alternate ease-in-out;
-//   counter-reset: num var(--num);
-// }
-
-// Points p::after {
-//   content: counter(num);
-// }
-
-// @keyframes counter {
-//   from {
-//     --num: 0;
-//   }
-
-//   to {
-//     --num: 100;
-//   }
-// }
